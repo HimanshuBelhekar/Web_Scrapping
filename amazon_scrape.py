@@ -53,7 +53,7 @@ if __name__ == '__main__':
 	#URL of website you want to scrape
 	URL = "https://www.amazon.in/s?k=gaming+laptop&i=computers&sprefix=gaming%2Ccomputers%2C286&ref=nb_sb_ss_ts-doa-p_5_6"
 
-	#Add your user agent. If not sure you can whatismybrowser website
+	#Add your user agent. If not sure you can check whatismybrowser website
 	HEADERS = ({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36', 'Accept-Language': 'en-US, en;q=0.5'})
 
 	#HTTP request
