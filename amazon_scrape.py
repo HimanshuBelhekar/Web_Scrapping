@@ -70,8 +70,6 @@ if __name__ == '__main__':
 	for link in links:
 		links_list.append("https://www.amazon.in" + link.get('href'))
 
-	#print(links_list)
-
 	data = {"Title":[], "Price":[], "Rating":[], "Review":[]}
 
 	for link in links_list:
@@ -84,8 +82,6 @@ if __name__ == '__main__':
 		data['Price'].append(get_price(new_soup))
 		data['Rating'].append(get_rating(new_soup))
 		data['Review'].append(get_review(new_soup))
-
-	#print(data)
 
 	amazon_df = pd.DataFrame.from_dict(data)
 	amazon_df['Title'].replace('', np.nan, inplace=True)
